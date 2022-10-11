@@ -1,0 +1,34 @@
+/* // CONVERT THE TWO VALUES TO FLOATING POINT AND INTEGERS
+// ASK USER HOW MANY KILOMETERES HE WANTS TO TRAVEL
+const routeKm = parseFloat(prompt("Quanti chilometri vuoi percorrere?"));
+
+//ASK USER HIS AGE 
+const userAge = parseInt(prompt("Quanti anni ha?"));
+
+console.log(routeKm, typeof(routeKm));
+console.log(userAge, typeof(userAge));
+
+// PROCESSING DATA
+// CALCULATE THE TOTAL FARE FOR THE TRIP
+const fareTicket = "0.21";
+let amountTicket = fareTicket * routeKm;
+console.log(amountTicket, typeof(amountTicket)); //ORIGINAL PRICE
+amountTicket = amountTicket.toFixed(2);
+
+// IF THE AGE IS BELOW 18 THEN A 20% DISCOUNT WILL BE APPLIED 
+    // OUTPUT MESSAGE: YOUR DISCOUNT FARE TICKET AMOUNT IS:
+// IF THE AGE IS OVER 65 THEN A 40% DISCOUNT WILL BE APPLIED
+    // OUTPUT MESSAGE: YOUR DISCOUNT FARE TICKET AMOUNT IS:
+if (userAge < 18) {
+    let discountMinor = (amountTicket * 20) / 100;
+    discountFare = amountTicket - discountMinor;
+} else if (userAge >= 65) {
+    let discountOver = (amountTicket * 40) / 100;
+    discountFare = amountTicket - discountOver;
+} else {
+    alert (`Il biglietto costa: `+ amountTicket);
+}
+
+discountFare = discountFare.toFixed(2);
+alert (`Il biglietto costa: `+ discountFare); */
+
